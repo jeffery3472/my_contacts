@@ -11,11 +11,11 @@ class Contacts extends StatelessWidget {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
-          title: Text(
+          title:const Text(
             "My Contacts",
             style: TextStyle(color: Colors.black),
           ),
-          actions: [
+          actions: const [
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: CircleAvatar(
@@ -39,7 +39,7 @@ class Contacts extends StatelessWidget {
           child: ListView(
               controller: _scrollController,
               shrinkWrap: true,
-              children: [
+              children:const [
                 Text("Recents"),
                 NewWidget(
                   image: "https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1527&q=80",
@@ -110,7 +110,7 @@ class Contacts extends StatelessWidget {
         floatingActionButton: FloatingActionButton(onPressed:(){ Navigator.push(context,
          MaterialPageRoute(builder:(context)=> const Profile()));
         },
-        child: Icon(Icons.add),
+        child:const Icon(Icons.add),
         )
         );
   }
@@ -135,6 +135,6 @@ class NewWidget extends StatelessWidget {
         ),
         title: Text(name),
         subtitle: Text(number),
-        trailing: Icon(Icons.more_horiz));
+        trailing:const Icon(Icons.more_horiz));
   }
 }
