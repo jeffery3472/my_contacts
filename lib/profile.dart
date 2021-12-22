@@ -10,7 +10,7 @@ class Profile extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
         title:const Padding(
-          padding: const EdgeInsets.only(left: 130.0),
+          padding:EdgeInsets.only(left: 130.0),
           child: Text(
             "Profile",
             style: TextStyle(color: Colors.black),
@@ -26,18 +26,18 @@ class Profile extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          CircleAvatar(
+          const CircleAvatar(
               backgroundImage: NetworkImage(
                   "https://images.unsplash.com/photo-1590086782957-93c06ef21604?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"),
               radius: 50),
-          Center(
+          const Center(
               child: Text(
             "Jesse Jeff Amoah",
             style: TextStyle(fontWeight: FontWeight.bold),
           )),
           Padding(
-              padding: EdgeInsets.symmetric(horizontal: 150),
-              child: Row(children: [
+              padding:const EdgeInsets.symmetric(horizontal: 150),
+              child: Row(children: const [
                 Icon(
                   Icons.location_on,
                   color: Colors.grey,
